@@ -1,0 +1,14 @@
+import requests
+from bs4 import BeautifulSoup
+import time
+
+
+
+def twitch1():
+  while leemur == 1:
+    url = "htpps://www.twitch.tv/anklespankin
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    response = request.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, "lxml")
+    data = str(soup).find('data-ended="true"')
+    print(data)
